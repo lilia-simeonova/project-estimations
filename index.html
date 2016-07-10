@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <base href="<%= APP_BASE %>">
+  <base href="/">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Project estimations</title>
   <meta name="description" content="">
-  <script src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- inject:css -->
+  <link rel="stylesheet" href="/css/all.css?1468152397756">
   <!-- endinject -->
 </head>
 <body>
@@ -41,29 +41,17 @@
   <!-- shims:js -->
   <!-- endinject -->
 
-  <% if (ENV === 'dev') { %>
-  <script>
-    System.config(<%=
-      JSON.stringify(SYSTEM_CONFIG, null, 2)
-    %>)
-  </script>
-  <% } %>
+  
 
   <!-- libs:js -->
   <!-- endinject -->
 
   <!-- inject:js -->
+  <script src="/js/shims.js?1468152397752"></script>
+  <script src="/js/app.js?1468152397753"></script>
   <!-- endinject -->
 
-  <% if (ENV === 'dev') { %>
-  <script>
-  System.import('<%= BOOTSTRAP_MODULE %>')
-    .catch(function (e) {
-      console.error(e,
-        'Report this error at https://github.com/mgechev/angular2-seed/issues');
-    });
-  </script>
-  <% } %>
+  
 
 </body>
 </html>
