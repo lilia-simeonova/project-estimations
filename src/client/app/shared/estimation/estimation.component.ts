@@ -37,17 +37,17 @@ export class InputValue {
 })
 export class EstimationComponent {
   public collectedResult: any;
-  public myData: DatasetValues = [{ data: [], label: 'None' }];
+  public myData: DatasetValues[] = [{ data: [], label: 'None' }];
   public testData: any;
   constructor(private calculator: Calculator, private passValue: PassValue) {}
-  //constructor(private passData: passData) {} 
+  //constructor(private passData: passData) {}
 
   processValue(val: CollectedValue) {
     this.collectedResult = this.calculator.calculate(val);
     this.myData = this.passValue.passData(this.collectedResult, val);
-       console.log("My data is:",this.passValue.passData(this.collectedResult, val););
+       console.log("My data is:",this.passValue.passData(this.collectedResult, val));
        console.log("Result from passValue function with Value property:", this.myData[0].label);
-    //   if(this.collectedResult.some(isNaN)){ 
+    //   if(this.collectedResult.some(isNaN)){
     //   this.myData = [];
     //   // console.log(isNaN(this.collectedResult));
     //   // console.log(val.pessimistic, val.mostLikely, parseFloat(this.collectedResult[0]), val.optimistic);
@@ -67,9 +67,9 @@ export class EstimationComponent {
 
     //     else {
     //       this.myData = [val.pessimistic, val.mostLikely, this.collectedResult[0], this.collectedResult[1], val.optimistic];
-          
-    //     } 
-    //   }      
+
+    //     }
+    //   }
   }
   myColor(){
     if (isNaN(this.collectedResult)) {
@@ -77,5 +77,5 @@ export class EstimationComponent {
     } else {
       return "black";
     }
-  }    
+  }
 }

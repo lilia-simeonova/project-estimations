@@ -22,7 +22,7 @@ export class PassValuePert extends PassValue {
 			<estimation-cmp></estimation-cmp>
 		`,
 	directives: [EstimationComponent],
-	styleUrls: ['../app/shared/estimation/estimation.component.css'],
 	providers: [provide(Calculator, { useClass: PertCalculator }), provide(PassValue, { useClass: PassValuePert })]
 })
 export class PertComponent {}
+

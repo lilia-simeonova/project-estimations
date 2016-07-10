@@ -25,7 +25,6 @@ export class PassValueComparison extends PassValue {
 		<estimation-cmp></estimation-cmp>
 	`,
 	directives: [EstimationComponent],
-	styleUrls: ['../app/shared/estimation/estimation.component.css'],
 	providers: [provide(Calculator, { useClass: CompositeCalculator }), provide(PassValue, {useClass: PassValueComparison})]
 })
 export class ComparisonComponent{}
@@ -33,7 +32,7 @@ export class ComparisonComponent{}
 // @Component ({
 // 	selector:'draw-comparison',
 // 	template:`
-// 		<input-value (value)="processValue($event)"></input-value> 
+// 		<input-value (value)="processValue($event)"></input-value>
 // 	`,
 // 	directives: []
 // })
