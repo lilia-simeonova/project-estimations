@@ -15,6 +15,7 @@ export class ProjectConfig extends SeedConfig {
     super();
     // this.APP_TITLE = 'Put name of your app here';
     let additional_deps: InjectableDependency[] = [
+      { src: 'chart.js/dist/Chart.bundle.min.js', inject: 'libs' }
       // {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
       // {src: 'lodash/lodash.min.js', inject: 'libs'},
     ];
