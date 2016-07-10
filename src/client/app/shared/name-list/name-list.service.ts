@@ -12,7 +12,7 @@ export class NameListService {
     'Edsger Dijkstra',
     'Donald Knuth',
     'Alan Turing',
-    'Grace Hopper'
+    'Lilly S'
   ];
 
   /**

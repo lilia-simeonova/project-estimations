@@ -1,0 +1,6 @@
+<h2>Add values for your Monte Carlo Estimation:</h2>
+<div class="calculations">
+    <provide-values class='custom' (value)="getValues($event)"></provide-values>
+    <p>{{setOfResult}}</p> 
+    <bar-chart-demo [data] = "finalValue"></bar-chart-demo>
+</div>

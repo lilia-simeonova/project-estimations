@@ -3,7 +3,16 @@ import { ROUTER_DIRECTIVES, Routes } from '@angular/router';
 
 import { AboutComponent } from './+about/index';
 import { HomeComponent } from './+home/index';
+import { PertComponent } from './+pert/index';
+import { ThreePointComponent} from './+threepoint/index';
+import { ComparisonComponent} from './+comparison/index';
+import { MonteCarloComponent} from './+montecarlo/index';
+
+
 import { NameListService, NavbarComponent, ToolbarComponent } from './shared/index';
+//import {ThreePointComponent} from './+three-point/index';
+
+
 
 @Component({
   selector: 'sd-app',
@@ -19,6 +28,22 @@ import { NameListService, NavbarComponent, ToolbarComponent } from './shared/ind
   {
     path: '/about',
     component: AboutComponent
+  },
+  {
+    path: '/pert',
+    component: PertComponent
+  },
+  {
+    path: '/three-point',
+    component: ThreePointComponent
+  },
+  {
+    path: '/comparison',
+    component: ComparisonComponent
+  },
+  {
+    path: '/montecarlo',
+    component: MonteCarloComponent
   }
 ])
 /**
