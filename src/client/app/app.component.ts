@@ -23,7 +23,7 @@ import { NameListService, NavbarComponent, ToolbarComponent } from './shared/ind
 @Routes([
   {
     path: '/',
-    component: HomeComponent
+    component: PertComponent
   },
   {
     path: '/about',
